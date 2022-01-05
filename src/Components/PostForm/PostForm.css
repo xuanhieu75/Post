@@ -1,0 +1,68 @@
+.post-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+.post-form.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.post-form-heading {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid silver;
+  background-color: white;
+}
+.post-form-content {
+  width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid silver;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  z-index: 11;
+}
+textarea {
+  width: 100%;
+  height: 140px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  cursor: text;
+  resize: none;
+}
+.post-form-footer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  background-color: white;
+  border-top: 1px solid silver;
+}
+.post-form-input {
+  width: 100%;
+  background-color: white;
+}
+
+.close {
+  float: right;
+  font-weight: 300;
+}
+.close:hover {
+  background-color: rgb(77, 77, 77);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}

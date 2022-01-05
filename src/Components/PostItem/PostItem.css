@@ -1,0 +1,72 @@
+.post-item {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border: 1px solid silver;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.post-item-heading-left {
+  display: flex;
+  align-items: center;
+}
+
+.post-item-heading-right,
+.post-comment-item-option {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 1;
+}
+.post-comment-item-option {
+  align-self: center;
+  margin-left: 10px;
+  display: none;
+}
+
+.post-item-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.post-item-heading-info {
+  font-size: 13px;
+}
+.post-item-heading-name {
+  font-weight: 600;
+}
+
+.post-item-content {
+  line-height: 1.6;
+  padding: 10px 0;
+}
+input {
+  flex-grow: 1;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background-color: #f0f2f5;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.post-item-heading-right-list {
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  width: 100px;
+  display: flex;
+  right: 0;
+}
+
+.post-item-heading-right-item {
+  padding: 10px;
+}
+.post-item-heading-right-item:hover {
+  background-color: #f0f2f5;
+  border-radius: 5px;
+}
